@@ -14,7 +14,7 @@ uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "png", "jpeg"])
 if uploaded_file is not None:
     # Display uploaded image
     img = Image.open(uploaded_file)
-    st.image(img, caption='Uploaded Image', use_column_width=True)
+    st.image(img, caption='Uploaded Image', use_container_width =True)
 
     # Preprocess the image
     img = img.resize((8, 8))  # Resize to 8x8
