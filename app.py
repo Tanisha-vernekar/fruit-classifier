@@ -7,7 +7,7 @@ import numpy as np
 st.title("Simple Image Classifier")
 
 # Load model
-model = load_model("your_model.h5")
+model = load_model("model.h5")
 
 # Upload image
 uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "png", "jpeg"])
