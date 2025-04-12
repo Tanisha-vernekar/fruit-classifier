@@ -3,7 +3,8 @@ import numpy as np
 from tensorflow.keras.models import load_model
 
 # Load the model
-model = load_model("model.h5")
+model = load_model("model.h5", compile=False)
+
 
 st.title("Fruit Classifier (with Numeric Inputs)")
 
