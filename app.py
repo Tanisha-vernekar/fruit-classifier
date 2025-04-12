@@ -17,10 +17,10 @@ uploaded_file = st.file_uploader("Upload a fruit image", type=["jpg", "jpeg", "p
 if uploaded_file is not None:
     # Open and display the image
     img = Image.open(uploaded_file).convert("RGB")
-    st.image(img, caption="Uploaded Image", use_column_width=True)
+    st.image(img, caption="Uploaded Image", use_container_width=True)
 
     # Preprocess the image to match the model's input
-    img = img.resize((160, 200))  # Resize based on your model's expected input size
+    img = img.resize((160, 160))  # Resize based on your model's expected input size
     img_array = np.array(img) / 255.0  # Normalize the image
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
 
