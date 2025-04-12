@@ -11,7 +11,7 @@ model = load_model("model.h5")
 class_labels = ["Apple", "Kiwi", "Orange"]
 
 # Set the image size your model expects (change if needed)
-IMAGE_SIZE = (128, 128)
+IMAGE_SIZE = (200, 160)
 
 # App title
 st.title("🍎🥝🍊 Fruit Classifier")
